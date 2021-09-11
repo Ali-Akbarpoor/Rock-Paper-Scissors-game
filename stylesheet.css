@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+*::before,*::after{
+	margin: 0;
+	padding: 0;
+}
+:root{
+	--border-black:#1a0d14;
+	--white: #ffffff;
+	--green:#19aba0;
+	--yellow:#b3cc33;
+	--red:#e2122c;
+}
+body{
+	width: 100%;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--white);
+}
+.container{
+	width: 75%;
+}
+.scores{
+	width: 100%;
+	height: 180px;
+	margin: 15px;
+	border-bottom: 1px solid var(--border-black);
+}
+.scores #logo{
+	display: inline-block;
+	font-size: 42px;
+	width: 25%;
+	height: 100%;
+}
+.scores div{
+	position: relative;
+	font-size: 24px;
+	border: 1px solid var(--border-black);
+	padding: 10px 10px ;
+	border-radius: 10px;
+	margin: 15px;
+	left: 300px;
+	bottom: 200px;
+}
+.user-score , .ai-score{
+	width: 35%;
+}
+
+.plan{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 360px;
+	
+}
+.plan img{
+	position: relative;
+	width: 160px;
+	margin: 10px;
+	cursor: pointer;
+}
+.plan img:nth-child(2){
+	bottom: 100px;
+}
+.plan img:nth-child(1),.plan img:nth-child(3){
+	top: 50px;
+}
+.upshot{
+	display: flex;
+	width: 100%;
+}
+.upshot div{
+	margin: 25px;
+}
+.upshot img{
+	width: 120px;
+}
+.upshot .user-selection{
+content: '';
+	
+}
+.upshot .ai-selection{
+content: '';
+}
+.upshot .result-div{
+	width: 120px;
+	border: 2px solid var(--border-black);
+	padding: 10px 10px;
+	border-radius: 15px;
+	background: var(--green);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.result-tag{
+	font-size: 42px;
+
+}
+#resetBtn{
+	position: absolute;
+	width: 120px;
+	height: 35px;
+	outline: none;
+	cursor: pointer;
+	font-family: sans-serif;
+	background: var(--yellow);
+	border-color: #ffffff;
+	transform: translateY(250px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hide{
+	display: none;
+}

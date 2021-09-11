@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="stylesheet.css">
+	</head>
+	<body>	
+		<div class="container">
+			<div class="scores">
+				<span id="logo">
+					Rock,
+					Paper,
+					Scissors
+				</span>
+				<div class="user-score">
+					<span id="score-tag">YOUR SCORE:</span>
+					<span id="user-score-tag">0</span>
+				</div>
+				<div class="ai-score">
+					<span id="score-tag">COMPUTER SCORE:</span>
+					<span id="cpu-score-tag">0</span>
+				</div>
+			</div>
+			<div class="plan ">
+					<img src="img/paper.png" alt="" class="game-item">
+					<img src="img/rock.png" alt="" class="game-item">
+					<img src="img/scissor.png" alt="" class="game-item">
+			</div>
+
+			<div class="upshot hide">
+				<div class="user-selection">
+					<h1>YOU PICKED</h1>
+					<img src="img/paper.png" alt="" class="user-picked">
+				</div>
+
+				<div class="result-div">
+					<h1 class="result-tag">YOU WIN!</h1>
+				</div>
+				
+				
+				
+				<div class="ai-selection">
+					<h1>COMPUTER PICKED</h1>
+					<img src="img/rock.png" alt="" class="ai-picked">
+				</div>
+
+				<button class="reset" id="resetBtn">PLAY AGAIN</button>
+			</div>
+
+		</div>
+		<script src="script.js" async defer></script>
+	</body>
+</html>
