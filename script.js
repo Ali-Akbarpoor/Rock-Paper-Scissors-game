@@ -2,7 +2,8 @@
  gamePlan = document.querySelector(".plan"),
  result = document.querySelector(".upshot"),
  resultTag = document.querySelector(".result-tag"),
- resetBtn = document.querySelector("#resetBtn");
+ resetBtn = document.querySelector("#resetBtn"),
+ resultDiv = document.querySelector(".result-div");
 
  let aiItem = document.querySelector(".ai-picked"),
  userItem = document.querySelector(".user-picked");
@@ -47,7 +48,7 @@ function checkGame(userPicked){
 		resultTag.innerHTML = "DRAW!";
 	}
 	//COMPUTER WINNER
-	console.log(userPicked);
+	
 	if(aiSelect==0 && userPicked == 1){
 		resultTag.innerHTML = "COMPUTER WINNER!";
 		document.querySelector("#cpu-score-tag").innerHTML = Number(document.querySelector("#cpu-score-tag").innerHTML )+1
@@ -83,3 +84,7 @@ resetBtn.addEventListener("click" , ()=>{
 	result.classList.add("hide");
 	gamePlan.classList.remove("hide");
 })
+
+function cpuWin(){
+	
+}
