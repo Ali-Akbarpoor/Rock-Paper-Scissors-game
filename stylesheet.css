@@ -45,13 +45,11 @@ body{
 	font-size: 24px;
 	border: 1px solid var(--border-black);
 	padding: 10px 10px ;
+	width: 220px;
 	border-radius: 10px;
-	margin: 15px;
-	left: 300px;
-	bottom: 200px;
-}
-.user-score , .ai-score{
-	width: 35%;
+	margin: 20px;
+	left: 65%;
+	bottom: 90%;
 }
 
 .plan{
@@ -76,46 +74,50 @@ body{
 }
 .upshot{
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 }
-.upshot div{
-	margin: 25px;
+
+
+.upshot .user-selection , .upshot .ai-selection{
+	margin: 10%;
+	text-align: center;
 }
+
 .upshot img{
 	width: 120px;
 }
-.upshot .user-selection{
-content: '';
 	
-}
-.upshot .ai-selection{
-content: '';
-}
 .upshot .result-div{
-	width: 220px;
-	border: 2px solid var(--border-black);
+	width: 300px;
+	height: 50vh;
 	padding: 10px 10px;
 	border-radius: 15px;
-	background: var(--yellow);
-	color: #ffffff;
+	background:purple;
+	color: whitesmoke;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
+	margin-top: 10%;
+	
 }
 .result-tag{
-	font-size: 42px;
-
+	font-size: 38px;
+	
 }
 #resetBtn{
 	position: absolute;
 	width: 120px;
-	height: 35px;
+	height: 40px;
 	outline: none;
 	cursor: pointer;
+	border-radius: 5px;
 	font-family: sans-serif;
-	background: var(--yellow);
-	border-color: #ffffff;
-	transform: translateY(250px);
+	background: rgba(0, 0, 0, 0.5);
+	color: #ffffff;
+	transform: translateX(0px) translateY(100px);
 }
 
 
